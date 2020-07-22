@@ -24,6 +24,7 @@ body {
     --baseBackground: white;
     --baseColor: #1d2029;
     --switchSpinner: white;
+    --switch: #5f616d;
 }
 
 .wrapper {
@@ -72,7 +73,7 @@ body {
     display: block;
     border-radius: 20px;
     width: 65px;
-    background: var(--gray);
+    background: var(--switch);
     padding: 5px;
     box-sizing: border-box;
     cursor: pointer;
@@ -281,6 +282,27 @@ body {
     }
 }
 
+.is-dark-mode {
+    --cardgray: #252b43;
+    --gray: #8088ad;
+    --lightGray: #1d2029;
+    --cardTitle: #8088ad;
+    --baseBackground: #1d2029;
+    --baseColor: white;
+    --switchSpinner: #252b43;
+    --switch: linear-gradient(to right, #4796d2 0%, #37ce8f 100%);
+}
+
+.is-light-mode {
+    --cardgray: #f0f3fa;
+    --lightGray: #f8f9fe;
+    --cardTitle: #6f717e;
+    --baseBackground: white;
+    --baseColor: #1d2029;
+    --switchSpinner: white;
+    --switch: #5f616d;
+}
+
 @media (prefers-color-scheme: dark) {
      :root {
         --cardgray: #252b43;
@@ -289,9 +311,7 @@ body {
         --cardTitle: #8088ad;
         --baseBackground: #1d2029;
         --baseColor: white;
-        --swithSpinner: #252b43;
-    }
-    .switch {
-        background: linear-gradient(to right, #4796d2 0%, #37ce8f 100%);
+        --switchSpinner: #252b43;
+        --switch: linear-gradient(to right, #4796d2 0%, #37ce8f 100%);
     }
 }
